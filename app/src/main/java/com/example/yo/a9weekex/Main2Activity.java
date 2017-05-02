@@ -35,7 +35,6 @@ public class Main2Activity extends AppCompatActivity {
         addFruit.setOnAddListner(new AddFruit.OnAddListner() {
             @Override
             public void onAdd(String name, String price,int image) {
-                Toast.makeText(getApplicationContext(), name, Toast.LENGTH_SHORT).show();
                 adapter.addFruit(new Fruit2(name, price, image));
                 adapter.notifyDataSetChanged();
             }
